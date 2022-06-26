@@ -1,0 +1,17 @@
+﻿<Page x:Class="Bankautomat.auszahlungsfenster"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Bankautomat"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="auszahlungsfenster">
+
+    <Grid>
+        <Button x:Name="BtnAuszahlung" Content="Auszahlen" HorizontalAlignment="Left" Margin="448,248,0,0" VerticalAlignment="Top" Click="BtnAuszahlung_Click"/>
+        <Label Content="Wieviel Wollen sie ausbezahlt haben?:" HorizontalAlignment="Left" Margin="255,147,0,0" VerticalAlignment="Top" Background="#FFFDF9F9"/>
+        <TextBox x:Name="tbAuszahlung" HorizontalAlignment="Left" Margin="255,189,0,0" TextWrapping="Wrap" Text="Euro" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Page>
