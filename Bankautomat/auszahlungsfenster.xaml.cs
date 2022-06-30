@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bankautomat.src;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,12 @@ namespace Bankautomat
 
         private void BtnAuszahlung_Click(object sender, RoutedEventArgs e)
         {
+            var handler = BankHandler.GetInstance();
+            
             decimal betrag = decimal.Parse(tbAuszahlung.Text);
+            handler.Auszahlung(betrag, "Auszahlung");
+            
+
         }
     }
 }

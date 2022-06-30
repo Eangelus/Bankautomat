@@ -14,7 +14,7 @@
         <Button x:Name="BtnRegister" Content="Registrieren" HorizontalAlignment="Left" Margin="65,143,0,0" VerticalAlignment="Top" Click="BtnRegister_Click"/>
         <Button x:Name="BtnEinzahlung" Content="Einzahlung" HorizontalAlignment="Left" Margin="687,101,0,0" VerticalAlignment="Top" Click="BtnEinzahlung_Click"/>
         <Button x:Name="BtnAuszahlung" Content="Auszahlung" HorizontalAlignment="Left" Margin="687,138,0,0" VerticalAlignment="Top" Click="BtnAuszahlung_Click"/>
-        <Button x:Name="BtnBilanz" Content="Bilanz" HorizontalAlignment="Left" Margin="687,177,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BtnBilanz" Content="Bilanz" HorizontalAlignment="Left" Margin="687,177,0,0" VerticalAlignment="Top" Click="BtnBilanz_Click"/>
         <Button x:Name="BtnAbmelden" Content="Abmelden" HorizontalAlignment="Left" Margin="65,202,0,0" VerticalAlignment="Top" Click="BtnAbmelden_Click"/>
         <Frame x:Name="UnterMainW" Margin="153,60,145,59" Content="Willkomen zu Ihren Bankautomaten" NavigationUIVisibility ="Hidden"/>
 

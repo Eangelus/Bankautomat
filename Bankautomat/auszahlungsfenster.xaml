@@ -9,9 +9,9 @@
       Title="auszahlungsfenster">
 
     <Grid>
-        <Button x:Name="BtnAuszahlung" Content="Auszahlen" HorizontalAlignment="Left" Margin="448,248,0,0" VerticalAlignment="Top" Click="BtnAuszahlung_Click"/>
-        <Label Content="Wieviel Wollen sie ausbezahlt haben?:" HorizontalAlignment="Left" Margin="255,147,0,0" VerticalAlignment="Top" Background="#FFFDF9F9"/>
-        <TextBox x:Name="tbAuszahlung" HorizontalAlignment="Left" Margin="255,189,0,0" TextWrapping="Wrap" Text="Euro" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnAuszahlung" Content="Auszahlen" HorizontalAlignment="Left" Margin="191,106,0,0" VerticalAlignment="Top" Click="BtnAuszahlung_Click"/>
+        <Label Content="Wieviel Wollen sie ausbezahlt haben?:" HorizontalAlignment="Left" Margin="39,40,0,0" VerticalAlignment="Top" Background="#FFFDF9F9"/>
+        <TextBox x:Name="tbAuszahlung" HorizontalAlignment="Left" Margin="39,103,0,0" TextWrapping="Wrap" Text="Euro" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Page>

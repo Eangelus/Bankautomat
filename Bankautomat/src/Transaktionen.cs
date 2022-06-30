@@ -8,15 +8,19 @@ namespace Bankautomat.src
 {
     public class Transaktionen
     {
-        public decimal Menge { get; }
-        public DateTime Date { get; }
-        public string Note { get; }
+        public decimal Menge { get; set; }
+        public DateTime Date { get; set; }
+        public string Note { get; set; }
 
         public Transaktionen(decimal menge, DateTime date, string note)
         {
             Menge = menge;
             Date = date;
             Note = note;
+        }
+        public string giveMeAll()
+        {
+            return Note + ": " + Menge.ToString()+ " Euro" + " Am: " + Date.ToString();
         }
 
     }

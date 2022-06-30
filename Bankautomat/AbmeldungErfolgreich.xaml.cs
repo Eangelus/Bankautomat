@@ -1,5 +1,4 @@
-﻿using Bankautomat.src;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,22 +16,13 @@ using System.Windows.Shapes;
 namespace Bankautomat
 {
     /// <summary>
-    /// Interaktionslogik für einzahlungsfenster.xaml
+    /// Interaktionslogik für AbmeldungErfolgreich.xaml
     /// </summary>
-    public partial class Einzahlungsfenster : Page
+    public partial class AbmeldungErfolgreich : Page
     {
-        public static decimal betrag;
-        public Einzahlungsfenster()
+        public AbmeldungErfolgreich()
         {
             InitializeComponent();
         }
-
-        private void btnEinzahlung_Click(object sender, RoutedEventArgs e)
-        {
-            betrag = decimal.Parse(tbEinzahlung.Text);
-            BankHandler handler = BankHandler.GetInstance();
-            handler.KontoEinzahlung(betrag, "Einzahlung");
-        }
-
     }
 }

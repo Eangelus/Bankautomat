@@ -19,19 +19,21 @@ namespace Bankautomat
     /// <summary>
     /// Interaktionslogik für register.xaml
     /// </summary>
-    public partial class register : Page
+    public partial class Register : Page
     {
-       static Bankkonto bankkonto = new Bankkonto();
-        public register()
+       
+        public Register()
         {
             InitializeComponent();
             
         }
 
-        public object regErfolg()
+        public void RegErfolg()
         {
+            var handler = BankHandler.GetInstance();
+            handler.CreateKonto(tbBenutzer.Text, tbpw1.Text);
+            Console.WriteLine("KontotErstellt");
 
-            
         }
 
 
@@ -42,7 +44,7 @@ namespace Bankautomat
             {
                 if(tbpw1.Text == tbpw2.Text)
                 {
-                    regErfolg();
+                    RegErfolg();
                     
                 }
                 else

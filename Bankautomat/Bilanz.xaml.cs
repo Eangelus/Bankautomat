@@ -17,24 +17,25 @@ using System.Windows.Shapes;
 namespace Bankautomat
 {
     /// <summary>
-    /// Interaktionslogik für anmelde.xaml
+    /// Interaktionslogik für Bilanz.xaml
     /// </summary>
-    public partial class anmelde : Page
+    public partial class Bilanz : Page
     {
-        public anmelde()
+        public Bilanz()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
             var handler = BankHandler.GetInstance();
-            string benutzer = TbBenutzer.Text;
-            string pw = TbPw.Text;
-            var a = handler.findeKonto(benutzer, pw);
-            Console.WriteLine("printe aus der anmelde das gefundene Konto: " + a);
-            //anmelde.
-        
+
+            var liste = handler.GetAllTransaktionen();
+            TbBilanz.Text = "Hier kommt die Transaktionen\n\n";
+            // Adde alles inhalte der Transaktionsliste in die Box
+            foreach (Transaktionen t in liste)
+            {
+
+                    TbBilanz.Text += t.giveMeAll() + "\n";
+                
+            }
+            TbBilanz.Text +="\n" + "Kontostand: " + handler.GetKontostand();
         }
     }
 }

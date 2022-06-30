@@ -55,11 +55,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AbmeldungErfolgreich.xaml.cs">
+      <DependentUpon>AbmeldungErfolgreich.xaml</DependentUpon>
+    </Compile>
     <Compile Include="anmelde.xaml.cs">
       <DependentUpon>anmelde.xaml</DependentUpon>
     </Compile>
     <Compile Include="auszahlungsfenster.xaml.cs">
       <DependentUpon>auszahlungsfenster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bilanz.xaml.cs">
+      <DependentUpon>Bilanz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BitteAnmeldenFenster.xaml.cs">
+      <DependentUpon>BitteAnmeldenFenster.xaml</DependentUpon>
     </Compile>
     <Compile Include="einzahlungsfenster.xaml.cs">
       <DependentUpon>einzahlungsfenster.xaml</DependentUpon>
@@ -73,11 +82,23 @@
     <Compile Include="Willkommen.xaml.cs">
       <DependentUpon>Willkommen.xaml</DependentUpon>
     </Compile>
+    <Page Include="AbmeldungErfolgreich.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="anmelde.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="auszahlungsfenster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Bilanz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BitteAnmeldenFenster.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
